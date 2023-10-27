@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <!-- <link rel="math" href="./math.js"> -->
+    <title>Calculator</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="textClear">
+            <input type="text" id="display" readonly>
+            <div class="clear">
+            <button onclick="clearDisplay('')">AC</button>
+            </div>
+        </div>
+        <div class="buttons">
+            <button style="background-color:black" onclick="appendToDisplay('9')">9</button>
+            <button style="background-color:black" onclick="appendToDisplay('8')">8</button>          
+            <button style="background-color:black" onclick="appendToDisplay('7')">7</button>
+    
+            <button style="background-color:gray" onclick="appendToDisplay('+')">+</button>
+
+            <button style="background-color:black" onclick="appendToDisplay('6')">6</button>
+            <button style="background-color:black" onclick="appendToDisplay('5')">5</button>
+            <button style="background-color:black" onclick="appendToDisplay('4')">4</button>
+          
+            <button style="background-color:gray" onclick="appendToDisplay('-')">-</button>
+
+            <button  style="background-color:black" onclick="appendToDisplay('3')">3</button>
+            <button style="background-color:black" onclick="appendToDisplay('2')">2</button>
+            <button style="background-color:black" onclick="appendToDisplay('1')">1</button>
+            
+            <button style="background-color:gray" onclick="appendToDisplay('/')">/</button>
+
+            <button style="background-color:black" onclick="appendToDisplay('.')">.</button>
+            <button style="background-color:black" onclick="appendToDisplay('0')">0</button>
+            <button style="background-color:black" onclick="calculateResult()">=</button>
+
+            <button style="background-color:gray" onclick="appendToDisplay('*')">*</button>
+        </div>
+    </div>
+<script src="./math.js"></script>
+
+</body>
+</html>
